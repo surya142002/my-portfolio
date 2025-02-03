@@ -13,7 +13,7 @@ const Projects = () => {
         My Projects
       </h1>
       <p className="mt-2 text-base sm:text-lg md:text-xl">
-        Check out some of my work, including my Medicare public data project.
+        uhhhhhhhhhhhhh
       </p>
     </motion.div>
   );
