@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen transition-colors duration-300">
+      <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen pt-16 px-4 sm:px-8 lg:px-16 transition-colors duration-300">
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
