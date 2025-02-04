@@ -6,7 +6,7 @@ const projects = [
   {
     id: 'medicare-data',
     title: 'Medicare Data Project',
-    description: 'A full-stack app for exploring Medicare datasets using React, Node.js, and PostgreSQL. Integrated advanced search features using Meilisearch, created secure user authentication with JWT, and ensured responsive design with Tailwind CSS.',
+    description: 'A full-stack app for exploring Medicare datasets using React, Node.js, and PostgreSQL. Created secure user authentication with JWT, and ensured responsive design with Tailwind CSS.',
     video: 'https://your-demo-video-link.com',
   },
   {
