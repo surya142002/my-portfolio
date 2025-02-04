@@ -5,18 +5,28 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Default dark mode enabled
 
-  // Load dark mode preference from localStorage
+  // Force dark mode on first load unless a preference is stored
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark') {
-      setDarkMode(true);
+
+    if (!storedTheme) {
+      setDarkMode(true);  // Default to dark mode if no preference is stored
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      if (storedTheme === 'dark') {
+        setDarkMode(true);
+        document.documentElement.classList.add('dark');
+      } else {
+        setDarkMode(false);
+        document.documentElement.classList.remove('dark');
+      }
     }
   }, []);
 
-  // Toggle dark mode and save preference
+  // Save preference when toggling dark mode
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
