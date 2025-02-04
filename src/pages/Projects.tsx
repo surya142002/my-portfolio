@@ -46,8 +46,8 @@ const projects = [
   },
   {
     id: 'merck-data-viz',
-    title: 'Merck Data Visualization',
-    description: 'Data visualization project using R Shiny dashboards.',
+    title: 'Data Visualization',
+    description: 'bio-wearables data visualization project using R Shiny dashboards for Merck.',
     tech: ['R', 'Shiny'],
     image: '/images/merck.png',
   },

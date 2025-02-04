@@ -41,8 +41,8 @@ const projects = [
   },
   {
     id: 'merck-data-viz',
-    title: 'Merck Data Visualization',
-    description: 'Data visualization project using R Shiny dashboards. Presented complex datasets in an intuitive format and enhanced user interaction with dynamic visual elements.',
+    title: 'Bio-Wearables Data Visualization',
+    description: 'Data visualization project using R Shiny dashboards. Presented Fitbit data in an intuitive format and enhanced user interaction with dynamic visual elements.',
     video: 'https://your-demo-video-link.com',
   },
   {
