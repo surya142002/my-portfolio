@@ -1,12 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark"> <!-- Add the 'dark' class here -->
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Surya Suresh Portfolio</title> <!-- Updated title for personalization -->
+    <script>
+      // Check localStorage for theme preference before React loads
+      (function() {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || !theme) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
