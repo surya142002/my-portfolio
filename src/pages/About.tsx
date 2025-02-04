@@ -33,7 +33,7 @@ const About = () => {
         My experience spans a variety of technologies, as demonstrated in my projects:
       </p>
       <ul className="list-disc list-inside text-base sm:text-lg md:text-xl text-left mt-4">
-        <li><strong>Full-Stack Development:</strong> Built a Medicare Data Platform using <strong>React, Node.js, PostgreSQL, Meilisearch, and JWT authentication</strong>.</li>
+        <li><strong>Full-Stack Development:</strong> Built a Medicare Data Platform using <strong>React, Node.js, PostgreSQL, and JWT authentication</strong>.</li>
         <li><strong>Artificial Intelligence & ML:</strong> Developed an Object Detection AI project using <strong>YOLO, Roboflow, and Python</strong> to detect assignment similarities.</li>
         <li><strong>Systems Programming:</strong> Created a custom <strong>shell</strong> and <strong>memory allocator</strong> in C and C++.</li>
         <li><strong>Data Visualization:</strong> Worked on an R Shiny dashboard for Merck, transforming complex datasets into interactive visuals.</li>
