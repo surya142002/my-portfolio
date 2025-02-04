@@ -42,7 +42,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !(menuRef.current as HTMLElement).contains(event.target as Node)) {
-      setIsOpen(false); // Close menu if clicked outside
+        setIsOpen(false); // Close menu if clicked outside
       }
     };
 
@@ -60,7 +60,8 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4 shadow-md fixed w-full z-10 top-0 left-0 dark:bg-gray-900">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Surya Suresh</h1>
+        {/* Make the name clickable and redirect to the home page */}
+        <Link to="/" className="text-2xl font-bold hover:text-gray-400">Surya Suresh</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-4 items-center">
