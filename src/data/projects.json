@@ -8,7 +8,7 @@
             "techStack": ["React", "Node.js", "PostgreSQL"],
             "video": "/videos/DemoMedicareData.mov",
             "images": ["/images/medicare.png"],
-            "github": "https://github.com/surya142002/medicare-data",
+            "github": "https://github.com/surya142002/MedicareData",
             "showVideoOnly": true,
             "extraDescription": {
               "problemStatement": "Medicare data is vast but not easily searchable. This project was built to make healthcare data more accessible to researchers and professionals. While many Medicare datasets exist, they are often difficult to navigate, requiring a user-friendly interface and efficient search capabilities.",
