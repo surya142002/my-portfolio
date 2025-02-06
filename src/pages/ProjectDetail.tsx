@@ -25,38 +25,50 @@ const ProjectDetail = () => {
       transition={{ duration: 0.5 }}
     >
       {/* Project Title */}
-      <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">{project.title}</h1>
 
       {/* Long Description */}
-      <p className="text-lg mb-4">{project.longDescription}</p>
+      <p className="text-lg mb-4 text-center">{project.longDescription}</p>
 
-
-
-      {/* Video Demo (Only If Available) */}
-      {project.video && (
-        <div className="w-full h-64 md:h-96 mb-8">
-          <iframe
-            src={project.video}
-            title={`${project.title} Demo`}
-            className="w-full h-full rounded-lg"
-            allowFullScreen
-          ></iframe>
+      {/* Conditionally Show Video OR Images */}
+      {project.showVideoOnly && project.video ? (
+        // Show Only Video (For Medicare Data Project)
+        <div className="w-full flex justify-center">
+          <video controls className="w-full md:w-3/4 lg:w-2/3 h-auto rounded-lg">
+            <source src={project.video} type="video/mp4" />
+            <source src={project.video} type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+      ) : (
+        // Show Images Normally (For Other Projects)
+        project.images && project.images.length > 0 && (
+          <div className="w-full flex justify-center">
+            {project.images.map((image, index) => (
+              <img 
+                key={index} 
+                src={image} 
+                alt={`${project.title} screenshot ${index + 1}`} 
+                className="w-full md:w-3/4 lg:w-2/3 rounded-lg shadow-md"
+              />
+            ))}
+          </div>
+        )
       )}
-
 
       {/* GitHub Link (Only If Available) */}
       {project.github && (
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition inline-block mb-6"
-        >
-          View on GitHub
-        </a>
+        <div className="text-center mt-6">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition inline-block"
+          >
+            View on GitHub
+          </a>
+        </div>
       )}
-
 
       {/* Navigation Arrows */}
       <div className="flex justify-between items-center mt-8">

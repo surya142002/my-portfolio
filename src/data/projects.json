@@ -6,9 +6,10 @@
         "shortDescription": "A full-stack app for exploring Medicare datasets.",
         "longDescription": "The Medicare Data Project is a web platform designed to allow users to search and explore Medicare datasets efficiently. Built using React, Node.js, and PostgreSQL, the application supports user authentication via JWT, ensures responsive design with Tailwind CSS, and integrates Meilisearch for fast and accurate dataset searches. The goal was to make Medicare data more accessible while maintaining a seamless user experience.",
         "techStack": ["React", "Node.js", "PostgreSQL"],
-        "video": "https://your-demo-video-link.com",
+        "video": "/videos/DemoMedicareData.mov",
         "images": ["/images/medicare.png"],
-        "github": "https://github.com/surya142002/MedicareData"
+        "github": "https://github.com/surya142002/MedicareData",
+        "showVideoOnly": true
       },
       {
         "id": "object-detection",
@@ -16,7 +17,8 @@
         "shortDescription": "Using YOLO and Roboflow to detect assignment similarities.",
         "longDescription": "This AI-powered project utilizes YOLO and Roboflow to train a machine learning model for detecting assignment similarities, assisting in plagiarism detection for coding assignments. The model was trained on custom datasets, fine-tuned for accuracy, and integrated with Python libraries such as Pandas to analyze results efficiently.",
         "techStack": ["Python", "YOLO", "Roboflow"],
-        "images": ["/images/object-detection.png"]
+        "images": ["/images/object-detection.png"],
+        "showVideoOnly": false
       },
       {
         "id": "pacman-ai",
@@ -24,7 +26,8 @@
         "shortDescription": "An AI-driven Pac-Man game using classical search algorithms.",
         "longDescription": "This project implements AI-driven gameplay for a Pac-Man game using classical search algorithms like Breadth-First Search (BFS), Depth-First Search (DFS), and A*. The AI navigates the Pac-Man through the game environment, making strategic decisions to maximize score while avoiding ghosts.",
         "techStack": ["Python"],
-        "images": ["/images/pacman.png"]
+        "images": ["/images/pacman.png"],
+        "showVideoOnly": false
       },
       {
         "id": "my-shell",
@@ -32,7 +35,8 @@
         "shortDescription": "A custom shell built in C and C++ for systems programming.",
         "longDescription": "Developed a lightweight Unix-like shell in C and C++ that supports command execution, piping, and redirection. This project involved implementing custom command parsing, executing built-in commands, and managing processes efficiently within a minimal command-line environment.",
         "techStack": ["C", "C++"],
-        "images": ["/images/shell.png"]
+        "images": ["/images/shell.png"],
+        "showVideoOnly": false
       },
       {
         "id": "memory-allocator",
@@ -40,7 +44,8 @@
         "shortDescription": "Created a custom memory allocator in C and C++.",
         "longDescription": "Built a custom memory allocator in C and C++ to manage dynamic memory allocation efficiently. The project involved implementing different allocation strategies, managing fragmentation, and ensuring efficient memory usage, making it a valuable exercise in low-level memory management.",
         "techStack": ["C", "C++"],
-        "images": ["/images/memory-allocator.png"]
+        "images": ["/images/memory-allocator.png"],
+        "showVideoOnly": false
       },
       {
         "id": "chatroom",
@@ -48,7 +53,8 @@
         "shortDescription": "A chatroom application using Java and Java graphics.",
         "longDescription": "Designed and implemented a real-time chatroom application in Java, demonstrating object-oriented programming principles. The chat application features a graphical user interface, message broadcasting, and user management, providing a simple yet effective communication platform.",
         "techStack": ["Java"],
-        "images": ["/images/chatroom.png"]
+        "images": ["/images/chatroom.png"],
+        "showVideoOnly": false
       },
       {
         "id": "merck-data-viz",
@@ -56,15 +62,17 @@
         "shortDescription": "Bio-wearables data visualization using R Shiny dashboards.",
         "longDescription": "A data visualization project that leverages R Shiny to create interactive dashboards for analyzing Fitbit bio-wearables data. The project aimed to transform complex datasets into intuitive visuals, enabling better insights into health and fitness trends.",
         "techStack": ["R", "Shiny"],
-        "images": ["/images/merck.png"]
+        "images": ["/images/merck.png"],
+        "showVideoOnly": false
       },
       {
         "id": "battleship",
         "title": "Battleship Game",
         "shortDescription": "Java-based Battleship game.",
-        "longDescription": "Developed a Battleship game in Java as an introduction to object-oriented programming. The game includes a grid-based interface, turn-based mechanics, and a simple AI opponent. This project was my first step into computer science and game development.",
+        "longDescription": "Developed a Battleship game in Java as an introduction to object-oriented programming. The game includes a grid-based interface, turn-based mechanics. This project was my first step into computer science.",
         "techStack": ["Java"],
-        "images": ["/images/battleship.png"]
+        "images": ["/images/battleship.png"],
+        "showVideoOnly": false
       }
     ]
   }
