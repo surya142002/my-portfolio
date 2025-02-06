@@ -28,9 +28,7 @@
               "technologiesUsed": [
                 "React for frontend development and UI components.",
                 "Node.js & Express for backend API handling.",
-                "PostgreSQL for structured data storage.",
-                "Meilisearch for fast and efficient dataset searching."
-              ],
+                "PostgreSQL for structured data storage."              ],
               "whatILearned": [
                 "Optimizing database queries for large-scale healthcare datasets.",
                 "How to implement structured data storage for medical code systems.",
