@@ -22,6 +22,7 @@
                 "Secure user authentication with JWT.",
                 "Basic search functionality for ICD-10 and HCPCS datasets.",
                 "Support for uploading and storing Medicare dataset files.",
+                "Unit Testing for backend API endpoints as well as frontend components.",
                 "Structured storage of healthcare codes using PostgreSQL."
               ],
               "technologiesUsed": [
