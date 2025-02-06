@@ -67,12 +67,11 @@ const ProjectDetail = () => {
           </a>
         </div>
       )}
-      
 
       {/* Extra Description Section (Only Render Sections That Exist) */}
       {project.extraDescription && (
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-4">Project Walkthrough</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Project Walkthrough</h2>
 
           {project.extraDescription.problemStatement && (
             <div className="mb-4">
@@ -81,7 +80,7 @@ const ProjectDetail = () => {
             </div>
           )}
 
-          {project.extraDescription.technicalChallenges?.length > 0 && (
+          {project.extraDescription?.technicalChallenges && project.extraDescription.technicalChallenges.length > 0 && (
             <div className="mb-4">
               <h3 className="text-xl font-semibold">Technical Challenges & Solutions</h3>
               <ul className="list-disc list-inside">
@@ -92,7 +91,7 @@ const ProjectDetail = () => {
             </div>
           )}
 
-          {project.extraDescription.keyFeatures?.length > 0 && (
+          {project.extraDescription?.keyFeatures && project.extraDescription.keyFeatures.length > 0 && (
             <div className="mb-4">
               <h3 className="text-xl font-semibold">Key Features</h3>
               <ul className="list-disc list-inside">
@@ -103,7 +102,7 @@ const ProjectDetail = () => {
             </div>
           )}
 
-          {project.extraDescription.technologiesUsed?.length > 0 && (
+          {project.extraDescription?.technologiesUsed && project.extraDescription.technologiesUsed.length > 0 && (
             <div className="mb-4">
               <h3 className="text-xl font-semibold">Technologies Used</h3>
               <ul className="list-disc list-inside">
@@ -114,7 +113,7 @@ const ProjectDetail = () => {
             </div>
           )}
 
-          {project.extraDescription.whatILearned?.length > 0 && (
+          {project.extraDescription?.whatILearned && project.extraDescription.whatILearned.length > 0 && (
             <div className="mb-4">
               <h3 className="text-xl font-semibold">What I Learned</h3>
               <ul className="list-disc list-inside">
@@ -125,7 +124,7 @@ const ProjectDetail = () => {
             </div>
           )}
 
-          {project.extraDescription.futureImprovements?.length > 0 && (
+          {project.extraDescription?.futureImprovements && project.extraDescription.futureImprovements.length > 0 && (
             <div className="mb-4">
               <h3 className="text-xl font-semibold">Future Improvements</h3>
               <ul className="list-disc list-inside">
