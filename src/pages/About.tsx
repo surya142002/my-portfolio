@@ -17,51 +17,62 @@ const About = () => {
       />
 
       {/* Heading */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-        About Me
-      </h1>
+      <h1 className="text-4xl font-bold mb-6 text-center">About Me</h1>
 
       {/* Introduction */}
-      <p className="mt-2 text-base sm:text-lg md:text-xl text-center">
+      <p className="mt-2 text-lg text-center">
         Hi! I'm Surya, a Computer Science graduate from Purdue University (Class of 2024), specializing in 
-        Artificial Intelligence and Machine Learning. I’m passionate about building software that solves real-world problems, 
-        particularly in AI, full-stack development, and systems programming.
+        artificial intelligence, machine learning, and software development. I love working on projects that 
+        bridge the gap between complex technology and real-world applications, whether that’s through AI-driven 
+        models, full-stack platforms, or low-level systems programming.
       </p>
 
-      {/* Project Technologies */}
-      <p className="mt-4 text-base sm:text-lg md:text-xl text-center">
-        My experience spans a variety of technologies, as demonstrated in my projects:
-      </p>
-      <ul className="list-disc list-inside text-base sm:text-lg md:text-xl text-left mt-4">
-        <li><strong>Full-Stack Development:</strong> Built a Medicare Data Platform using <strong>React, Node.js, PostgreSQL, and JWT authentication</strong>.</li>
-        <li><strong>Artificial Intelligence & ML:</strong> Developed an Object Detection AI project using <strong>YOLO, Roboflow, and Python</strong> to detect assignment similarities.</li>
-        <li><strong>Systems Programming:</strong> Created a custom <strong>shell</strong> and <strong>memory allocator</strong> in C and C++.</li>
-        <li><strong>Data Visualization:</strong> Worked on an R Shiny dashboard for Merck, transforming complex datasets into interactive visuals.</li>
-        <li><strong>Game Development & AI:</strong> Implemented AI search algorithms for the <strong>Pac-Man AI</strong> project.</li>
+      {/* Project Highlights */}
+      <p className="mt-6 text-lg text-center">Some of the projects I’ve worked on include:</p>
+      <ul className="list-disc list-inside text-lg text-left mt-4">
+        <li>
+          AI Snitch Machine – A computer vision project using YOLOv8 and Roboflow to detect similarities 
+          in student submissions. I focused on data preprocessing and model training.
+        </li>
+        <li>
+          Medicare Data Platform – A full-stack web application built with React, Node.js, and PostgreSQL, 
+          allowing users to search ICD-10 and HCPCS medical codes.
+        </li>
+        <li>
+          Systems Programming – Developed a Unix-like shell and a custom memory allocator in C and C++, 
+          working with process management, system calls, and dynamic memory allocation.
+        </li>
+        <li>
+          Bio-Wearables Data Visualization – Worked with The Data Mine at Purdue and Merck corporate partners 
+          to develop an R Shiny dashboard for analyzing Fitbit data.
+        </li>
+        <li>
+          Pac-Man AI – Implemented BFS, DFS, A*, and reinforcement learning to navigate Pac-Man through mazes.
+        </li>
       </ul>
 
-      {/* Personal Interests */}
-      <p className="mt-6 text-base sm:text-lg md:text-xl text-center">
-        Outside of coding, I enjoy hiking, playing basketball, and making the most of the winter season. 
-        As a huge Boston sports fan, you’ll often find me cheering on the Celtics and Patriots.
+      {/* Work Experience & Agile Exposure */}
+      <p className="mt-6 text-lg text-center">
+        My experience at The Data Mine at Purdue gave me insight into working in Agile/Scrum environments. 
+        I collaborated with a team using Trello and Confluence, attending regular Scrum meetings, setting 
+        development goals, and working with corporate mentors to refine our project.
       </p>
 
       {/* Skills Section */}
       <div className="mt-6 w-full max-w-3xl">
-        <h2 className="text-2xl font-semibold mb-2 text-center">Skills & Tools</h2>
-        <ul className="list-disc list-inside text-base sm:text-lg md:text-xl">
-          <li><strong>Programming Languages:</strong> Python, Java, C, C++, TypeScript, JavaScript, R, HTML/CSS</li>
-          <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express, Tailwind CSS, R Shiny</li>
-          <li><strong>AI/ML Tools:</strong> TensorFlow, PyTorch, Scikit-learn, YOLO, Roboflow</li>
-          <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
-          <li><strong>Other Tools:</strong> Git, Google Colab, Agile/Scrum methodologies</li>
+        <h2 className="text-2xl font-semibold mb-2 text-center">Skills & Technologies</h2>
+        <ul className="list-disc list-inside text-lg">
+          <li>Programming Languages: Python, Java, C, C++, TypeScript, JavaScript, R, HTML/CSS</li>
+          <li>Frameworks & Libraries: React, Node.js, Express, Tailwind CSS, R Shiny</li>
+          <li>AI/ML Tools: TensorFlow, PyTorch, Scikit-learn, YOLOv8, Roboflow</li>
+          <li>Databases: PostgreSQL, MongoDB</li>
+          <li>Other Tools: Git, Agile/Scrum, Trello, Confluence</li>
         </ul>
       </div>
 
       {/* Closing Statement */}
-      <p className="mt-6 text-base sm:text-lg md:text-xl text-center">
-        I’m always eager to learn and take on new challenges in AI, ML, full-stack development, and software engineering. 
-        Feel free to explore my work and connect with me!
+      <p className="mt-6 text-lg text-center">
+        I'm always excited to learn and build innovative projects. Feel free to explore my work and connect with me!
       </p>
     </motion.div>
   );

@@ -1,79 +1,300 @@
 {
     "projects": [
-      {
-        "id": "medicare-data",
-        "title": "Medicare Data Project",
-        "shortDescription": "A full-stack app for exploring Medicare datasets.",
-        "longDescription": "The Medicare Data Project is a web platform designed to allow users to search and explore Medicare datasets efficiently. Built using React, Node.js, and PostgreSQL, the application supports user authentication via JWT, ensures responsive design with Tailwind CSS, and integrates Meilisearch for fast and accurate dataset searches. The goal was to make Medicare data more accessible while maintaining a seamless user experience.",
-        "techStack": ["React", "Node.js", "PostgreSQL"],
-        "video": "/videos/DemoMedicareData.mov",
-        "images": ["/images/medicare.png"],
-        "github": "https://github.com/surya142002/MedicareData",
-        "showVideoOnly": true
-      },
-      {
-        "id": "object-detection",
-        "title": "Object Detection AI",
-        "shortDescription": "Using YOLO and Roboflow to detect assignment similarities.",
-        "longDescription": "This AI-powered project utilizes YOLO and Roboflow to train a machine learning model for detecting assignment similarities, assisting in plagiarism detection for coding assignments. The model was trained on custom datasets, fine-tuned for accuracy, and integrated with Python libraries such as Pandas to analyze results efficiently.",
-        "techStack": ["Python", "YOLO", "Roboflow"],
-        "images": ["/images/object-detection.png"],
-        "showVideoOnly": false
-      },
-      {
-        "id": "pacman-ai",
-        "title": "Pac-Man AI",
-        "shortDescription": "An AI-driven Pac-Man game using classical search algorithms.",
-        "longDescription": "This project implements AI-driven gameplay for a Pac-Man game using classical search algorithms like Breadth-First Search (BFS), Depth-First Search (DFS), and A*. The AI navigates the Pac-Man through the game environment, making strategic decisions to maximize score while avoiding ghosts.",
-        "techStack": ["Python"],
-        "images": ["/images/pacman.png"],
-        "showVideoOnly": false
-      },
-      {
-        "id": "my-shell",
-        "title": "My Shell",
-        "shortDescription": "A custom shell built in C and C++ for systems programming.",
-        "longDescription": "Developed a lightweight Unix-like shell in C and C++ that supports command execution, piping, and redirection. This project involved implementing custom command parsing, executing built-in commands, and managing processes efficiently within a minimal command-line environment.",
-        "techStack": ["C", "C++"],
-        "images": ["/images/shell.png"],
-        "showVideoOnly": false
-      },
-      {
-        "id": "memory-allocator",
-        "title": "Memory Allocator",
-        "shortDescription": "Created a custom memory allocator in C and C++.",
-        "longDescription": "Built a custom memory allocator in C and C++ to manage dynamic memory allocation efficiently. The project involved implementing different allocation strategies, managing fragmentation, and ensuring efficient memory usage, making it a valuable exercise in low-level memory management.",
-        "techStack": ["C", "C++"],
-        "images": ["/images/memory-allocator.png"],
-        "showVideoOnly": false
-      },
-      {
-        "id": "chatroom",
-        "title": "Java Chatroom",
-        "shortDescription": "A chatroom application using Java and Java graphics.",
-        "longDescription": "Designed and implemented a real-time chatroom application in Java, demonstrating object-oriented programming principles. The chat application features a graphical user interface, message broadcasting, and user management, providing a simple yet effective communication platform.",
-        "techStack": ["Java"],
-        "images": ["/images/chatroom.png"],
-        "showVideoOnly": false
-      },
-      {
-        "id": "merck-data-viz",
-        "title": "Bio-Wearables Data Visualization",
-        "shortDescription": "Bio-wearables data visualization using R Shiny dashboards.",
-        "longDescription": "A data visualization project that leverages R Shiny to create interactive dashboards for analyzing Fitbit bio-wearables data. The project aimed to transform complex datasets into intuitive visuals, enabling better insights into health and fitness trends.",
-        "techStack": ["R", "Shiny"],
-        "images": ["/images/merck.png"],
-        "showVideoOnly": false
-      },
+        {
+            "id": "medicare-data",
+            "title": "Medicare Data Project",
+            "shortDescription": "A full-stack app for exploring Medicare datasets.",
+            "longDescription": "The Medicare Data Project is a web platform designed to allow users to search and explore Medicare datasets efficiently. It currently supports dataset uploads for ICD-10 and HCPCS codes and enables basic keyword-based searching. The goal is to make Medicare data more accessible to researchers and healthcare professionals.",
+            "techStack": ["React", "Node.js", "PostgreSQL"],
+            "video": "/videos/DemoMedicareData.mov",
+            "images": ["/images/medicare.png"],
+            "github": "https://github.com/surya142002/medicare-data",
+            "showVideoOnly": true,
+            "extraDescription": {
+              "problemStatement": "Medicare data is vast but not easily searchable. This project was built to make healthcare data more accessible to researchers and professionals. While many Medicare datasets exist, they are often difficult to navigate, requiring a user-friendly interface and efficient search capabilities.",
+              "technicalChallenges": [
+                "Handling large Medicare datasets efficiently without slowing down performance.",
+                "Implementing basic keyword-based search functionality for ICD-10 and HCPCS codes.",
+                "Ensuring secure user authentication with JWT tokens.",
+                "Developing a scalable backend to support future dataset expansions."
+              ],
+              "keyFeatures": [
+                "Secure user authentication with JWT.",
+                "Basic search functionality for ICD-10 and HCPCS datasets.",
+                "Support for uploading and storing Medicare dataset files.",
+                "Structured storage of healthcare codes using PostgreSQL."
+              ],
+              "technologiesUsed": [
+                "React for frontend development and UI components.",
+                "Node.js & Express for backend API handling.",
+                "PostgreSQL for structured data storage.",
+                "Meilisearch for fast and efficient dataset searching."
+              ],
+              "whatILearned": [
+                "Optimizing database queries for large-scale healthcare datasets.",
+                "How to implement structured data storage for medical code systems.",
+                "Best practices for handling file uploads in a web application.",
+                "User authentication implementation using JWT."
+              ],
+              "futureImprovements": [
+                "Expanding dataset support beyond ICD-10 and HCPCS codes.",
+                "Enhancing search functionality to support natural language queries.",
+                "Integrating LLM-based search for more intelligent dataset querying.",
+                "Adding advanced filters for better data exploration."
+              ]
+            }
+          },
+          
+          {
+            "id": "object-detection",
+            "title": "AI Snitch Machine",
+            "shortDescription": "Using YOLOv8 and Roboflow to detect similarities in student submissions.",
+            "longDescription": "The AI Snitch Machine is a machine learning-powered tool designed to analyze and cluster student ERD (Entity Relationship Diagram) submissions. It uses YOLOv8 for object detection and Roboflow for dataset preprocessing to identify patterns and similarities in diagrams, helping automate grading and plagiarism detection. The project involved developing object detection, OCR text extraction, and clustering techniques to compare diagrams.",
+            "techStack": ["Python", "YOLOv8", "Roboflow", "EasyOCR"],
+            "images": ["/images/object-detection.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "Grading student ERD submissions is time-consuming and subjective. This tool helps automate grading by detecting similarities in diagrams and clustering them for easy review.",
+              "technicalChallenges": [
+                "Training a YOLOv8 model to recognize ERD components (entities, relationships, attributes).",
+                "Using OCR (Optical Character Recognition) to extract text from detected diagram elements.",
+                "Ensuring accurate object detection across varying student submissions.",
+                "Fine-tuning clustering algorithms to group similar diagrams efficiently."
+              ],
+              "keyFeatures": [
+                "Uses YOLOv8 for object detection on ERD diagrams.",
+                "OCR-powered text extraction using EasyOCR.",
+                "Clusters similar ERD submissions for grading automation.",
+                "Preprocessing pipeline for dataset annotation and augmentation."
+              ],
+              "technologiesUsed": [
+                "YOLOv8 for object detection.",
+                "Roboflow for dataset preprocessing, annotation, and augmentation.",
+                "EasyOCR for text recognition from diagrams.",
+                "OpenCV for image manipulation and preprocessing.",
+                "Python libraries like Pandas and NumPy for data handling."
+              ],
+              "whatILearned": [
+                "How to preprocess image datasets using Roboflow.",
+                "Training and fine-tuning object detection models with YOLOv8.",
+                "Using OCR to extract structured text data from images.",
+                "Collaborating on a machine learning project remotely (lots of late-night Zoom calls!)."
+              ]
+            }
+          },
+          
+          {
+            "id": "pacman-ai",
+            "title": "Pac-Man AI",
+            "shortDescription": "Implemented classical search algorithms in a Pac-Man environment.",
+            "longDescription": "As part of a structured course project, I developed AI agents for Pac-Man using classical search algorithms such as Depth-First Search (DFS), Breadth-First Search (BFS), Uniform Cost Search, and A*. This project provided hands-on experience with foundational AI concepts and their application in pathfinding and decision-making within a game environment.",
+            "techStack": ["Python"],
+            "images": ["/images/pacman.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "Navigate Pac-Man through mazes to collect all pellets efficiently while avoiding ghosts.",
+              "technicalChallenges": [
+                "Implementing various search algorithms to find optimal paths.",
+                "Balancing exploration and exploitation in pathfinding.",
+                "Understanding the trade-offs between different search strategies."
+              ],
+              "keyFeatures": [
+                "Implementation of DFS, BFS, Uniform Cost Search, and A* algorithms.",
+                "Visualization of search processes within the Pac-Man game.",
+                "Comparison of algorithm performance in different maze scenarios."
+              ],
+              "technologiesUsed": [
+                "Python for algorithm implementation.",
+                "Provided Pac-Man codebase for simulation and testing."
+              ],
+              "whatILearned": [
+                "Practical application of classical search algorithms.",
+                "Analyzing the efficiency and effectiveness of different search strategies.",
+                "Gained foundational understanding of AI problem-solving techniques."
+              ]
+            }
+          },
+          
+          {
+            "id": "my-shell",
+            "title": "My Shell",
+            "shortDescription": "Implemented a Unix-like shell with process handling, redirection, and piping.",
+            "longDescription": "As part of a structured course project, I implemented key features of a Unix-like shell in C and C++. This involved command parsing, executing processes, managing input/output redirection, and handling background processes. The project provided hands-on experience with system calls, process management, and inter-process communication.",
+            "techStack": ["C", "C++"],
+            "images": ["/images/shell.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "Understanding how Unix-like shells execute commands and manage processes is fundamental to systems programming. This project involved implementing a shell interpreter to execute commands, support redirection, and handle signals efficiently.",
+              "technicalChallenges": [
+                "Implementing command parsing to support arguments, piping, and redirection.",
+                "Managing foreground and background processes using `fork()`, `execvp()`, and `waitpid()`.",
+                "Handling zombie processes using `SIGCHLD` and ensuring proper process cleanup.",
+                "Implementing I/O redirection (`>`, `<`, `>>`) and pipes (`|`) for inter-process communication."
+              ],
+              "keyFeatures": [
+                "Supports command execution with arguments.",
+                "Implements background process management (`&`).",
+                "Handles input/output redirection and error redirection.",
+                "Supports command history and basic tab completion."
+              ],
+              "technologiesUsed": [
+                "C and C++ for systems-level programming.",
+                "POSIX system calls for process creation and management.",
+                "Lex & Yacc for command parsing.",
+                "Signal handling (`SIGINT`, `SIGCHLD`) for controlling background processes."
+              ],
+              "whatILearned": [
+                "How shells use `fork()`, `execvp()`, and `waitpid()` to manage processes.",
+                "Implementing pipes (`|`) to connect processes together.",
+                "Handling user input with command parsing using Lex & Yacc.",
+                "How to properly manage memory allocation for command structures."
+              ]
+            }
+          },
+          
+          {
+            "id": "memory-allocator",
+            "title": "Memory Allocator",
+            "shortDescription": "Implemented a custom memory allocator with dynamic allocation strategies.",
+            "longDescription": "As part of a structured course project, I implemented a custom memory allocator in C that mimics the behavior of `malloc()`, `free()`, and `realloc()`. This project provided hands-on experience with memory management, including dynamic allocation, fragmentation handling, and efficient space utilization. The implementation included various allocation strategies and ensured thread safety using mutex locks.",
+            "techStack": ["C", "C++"],
+            "images": ["/images/memory-allocator.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "Understanding how memory allocation works at a low level is fundamental to systems programming. This project involved implementing a custom memory allocator to manage heap memory efficiently, similar to how `malloc()` works in standard C libraries.",
+              "technicalChallenges": [
+                "Implementing `malloc()`, `free()`, and `realloc()` from scratch while maintaining efficiency.",
+                "Handling fragmentation to optimize memory reuse.",
+                "Ensuring thread safety using mutexes for concurrent memory allocation.",
+                "Developing multiple allocation strategies including first fit, next fit, best fit, and worst fit."
+              ],
+              "keyFeatures": [
+                "Custom implementations of `malloc()`, `free()`, and `realloc()`.",
+                "Freelist-based memory management with coalescing to minimize fragmentation.",
+                "Implemented various allocation strategies: first fit, next fit, best fit, and worst fit.",
+                "Thread safety ensured using mutex locks."
+              ],
+              "technologiesUsed": [
+                "C for low-level memory management.",
+                "POSIX system calls (`sbrk()`, `mmap()`) for heap expansion.",
+                "Mutex locks for thread-safe allocations."
+              ],
+              "whatILearned": [
+                "How dynamic memory allocation works under the hood.",
+                "Techniques for reducing memory fragmentation using freelists and coalescing.",
+                "Implementing and comparing different allocation strategies for performance.",
+                "Ensuring thread safety in memory management using mutexes."
+              ]
+            }
+          },
+          
+          {
+            "id": "chatroom",
+            "title": "Java Chatroom",
+            "shortDescription": "A multi-user chat application built in Java with networking and GUI.",
+            "longDescription": "For my Object-Oriented Programming final project, my team and I developed a real-time chatroom application in Java. This project was my first experience working in a group, using Git for version control, and implementing a structured software project from start to finish. The chatroom supports multiple users, message broadcasting, account management, and moderation tools, all built with Java's Swing for the GUI and Java Sockets for networking.",
+            "techStack": ["Java", "Swing", "Sockets", "JUnit"],
+            "images": ["/images/chatroom.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "We wanted to build a real-time chat application that allowed multiple users to communicate, similar to early instant messaging platforms.",
+              "technicalChallenges": [
+                "Implementing a client-server architecture using Java Sockets.",
+                "Managing concurrent user connections with multithreading. (We ended up just using a refresh button instead of real-time updates.)",
+                "Handling message broadcasting efficiently between clients.",
+                "Implementing account management with user authentication."
+              ],
+              "keyFeatures": [
+                "Real-time messaging using Java Sockets.",
+                "Multi-user chatrooms with message broadcasting.",
+                "Graphical user interface built with Java Swing.",
+                "User authentication and account management.",
+                "Moderator controls (e.g., kicking users, editing messages)."
+              ],
+              "technologiesUsed": [
+                "Java for object-oriented programming and networking.",
+                "Swing for creating the graphical user interface.",
+                "Sockets for handling client-server communication.",
+                "JUnit for unit testing core functionality."
+              ],
+              "whatILearned": [
+                "How to build a client-server application with Java Sockets.",
+                "Fundamentals of multithreading for handling concurrent connections.",
+                "Best practices for using Git and working in a collaborative development environment.",
+                "Writing and running unit tests using JUnit."
+              ]
+            }
+          },
+          
+          {
+            "id": "merck-data-viz",
+            "title": "Bio-Wearables Data Visualization",
+            "shortDescription": "A simple R Shiny dashboard for visualizing Fitbit health data.",
+            "longDescription": "This was my first experience working in an Agile/Scrum environment. As part of a student team in Purdue’s Data Mine program, I worked on a data visualization project in collaboration with Merck. Our team built an interactive dashboard using R Shiny to analyze Fitbit bio-wearables data. The goal was to transform large datasets into intuitive graphs and charts to help researchers identify trends in physical activity and heart rate metrics.",
+            "techStack": ["R", "Shiny", "Plotly", "ggplot2"],
+            "images": ["/images/merck.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "The goal of this project was to take complex Fitbit bio-wearables data and present it in an interactive, easy-to-understand format for researchers.",
+              "technicalChallenges": [
+                "Connecting and querying a remote database (MariaDB) to fetch Fitbit data.",
+                "Handling large datasets efficiently in R for real-time visualization.",
+                "Designing a clean and interactive dashboard using R Shiny."
+              ],
+              "keyFeatures": [
+                "Interactive dashboards for Fitbit data analysis.",
+                "Visualizations of activity levels, step counts, and heart rate trends.",
+                "SQL-based data retrieval from a MariaDB database.",
+                "Filters to explore specific time periods and data points."
+              ],
+              "technologiesUsed": [
+                "R for data processing and visualization.",
+                "Shiny for building interactive web dashboards.",
+                "Plotly & ggplot2 for creating dynamic charts and graphs.",
+                "MariaDB for storing and querying Fitbit data."
+              ],
+              "whatILearned": [
+                "How to work in an Agile/Scrum environment with sprints and daily standups.",
+                "Using tools like Confluence and Trello for project tracking.",
+                "Building interactive dashboards with R Shiny.",
+                "Collaborating with corporate partners in a structured project setting."
+              ]
+            }
+          },
+          
       {
         "id": "battleship",
         "title": "Battleship Game",
-        "shortDescription": "Java-based Battleship game.",
-        "longDescription": "Developed a Battleship game in Java as an introduction to object-oriented programming. The game includes a grid-based interface, turn-based mechanics. This project was my first step into computer science.",
+        "shortDescription": "A Java-based Battleship game that sparked my interest in computer science.",
+        "longDescription": "This was my first real programming project, and it played a huge role in getting me interested in computer science. As a group, we built a turn-based Battleship game in Java, implementing a graphical interface, game logic, and a basic AI opponent. The project had its challenges, including a complete restart after realizing our initial approach was flawed, but in the end, it was an incredibly rewarding experience that made programming fun for me.",
         "techStack": ["Java"],
         "images": ["/images/battleship.png"],
-        "showVideoOnly": false
+        "showVideoOnly": false,
+        "extraDescription": {
+          "problemStatement": "We wanted to create a digital version of Battleship with a functional user interface and turn-based gameplay.",
+          "technicalChallenges": [
+            "Redesigning the project after realizing our initial approach wasn’t working.",
+            "Implementing ship placement logic to prevent overlapping and ensure valid placements.",
+            "Handling game state updates and turn-based mechanics efficiently."
+          ],
+          "keyFeatures": [
+            "Turn-based gameplay with two-player support.",
+            "Graphical interface built with Java Swing.",
+            "Randomized ship placement and hit/miss detection.",
+            "Basic game AI for a single-player mode."
+          ],
+          "technologiesUsed": [
+            "Java for game logic and object-oriented design.",
+            "Swing for building the graphical user interface."
+          ],
+          "whatILearned": [
+            "The importance of planning before coding—our first version had to be scrapped and rewritten.",
+            "Fundamentals of object-oriented programming and game logic.",
+            "How to work as a team in a collaborative coding project."
+          ]
+        }
       }
+      
     ]
   }
   

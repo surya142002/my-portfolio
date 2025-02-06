@@ -27,12 +27,11 @@ const ProjectDetail = () => {
       {/* Project Title */}
       <h1 className="text-4xl font-bold mb-4 text-center">{project.title}</h1>
 
-      {/* Long Description */}
+      {/* Short Description */}
       <p className="text-lg mb-4 text-center">{project.longDescription}</p>
 
       {/* Conditionally Show Video OR Images */}
       {project.showVideoOnly && project.video ? (
-        // Show Only Video (For Medicare Data Project)
         <div className="w-full flex justify-center">
           <video controls className="w-full md:w-3/4 lg:w-2/3 h-auto rounded-lg">
             <source src={project.video} type="video/mp4" />
@@ -41,7 +40,6 @@ const ProjectDetail = () => {
           </video>
         </div>
       ) : (
-        // Show Images Normally (For Other Projects)
         project.images && project.images.length > 0 && (
           <div className="w-full flex justify-center">
             {project.images.map((image, index) => (
@@ -67,6 +65,76 @@ const ProjectDetail = () => {
           >
             View on GitHub
           </a>
+        </div>
+      )}
+      
+
+      {/* Extra Description Section (Only Render Sections That Exist) */}
+      {project.extraDescription && (
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold mb-4">Project Walkthrough</h2>
+
+          {project.extraDescription.problemStatement && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Problem Statement</h3>
+              <p className="text-lg">{project.extraDescription.problemStatement}</p>
+            </div>
+          )}
+
+          {project.extraDescription.technicalChallenges?.length > 0 && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Technical Challenges & Solutions</h3>
+              <ul className="list-disc list-inside">
+                {project.extraDescription.technicalChallenges.map((challenge, index) => (
+                  <li key={index} className="text-lg">{challenge}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.extraDescription.keyFeatures?.length > 0 && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Key Features</h3>
+              <ul className="list-disc list-inside">
+                {project.extraDescription.keyFeatures.map((feature, index) => (
+                  <li key={index} className="text-lg">{feature}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.extraDescription.technologiesUsed?.length > 0 && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Technologies Used</h3>
+              <ul className="list-disc list-inside">
+                {project.extraDescription.technologiesUsed.map((tech, index) => (
+                  <li key={index} className="text-lg">{tech}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.extraDescription.whatILearned?.length > 0 && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">What I Learned</h3>
+              <ul className="list-disc list-inside">
+                {project.extraDescription.whatILearned.map((lesson, index) => (
+                  <li key={index} className="text-lg">{lesson}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.extraDescription.futureImprovements?.length > 0 && (
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold">Future Improvements</h3>
+              <ul className="list-disc list-inside">
+                {project.extraDescription.futureImprovements.map((improvement, index) => (
+                  <li key={index} className="text-lg">{improvement}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
 
