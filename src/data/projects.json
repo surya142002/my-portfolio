@@ -265,7 +265,7 @@
         "id": "battleship",
         "title": "Battleship Game",
         "shortDescription": "A Java-based Battleship game that sparked my interest in computer science.",
-        "longDescription": "This was my first real programming project, and it played a huge role in getting me interested in computer science. As a group, we built a turn-based Battleship game in Java, implementing a graphical interface, game logic, and a basic AI opponent. The project had its challenges, including a complete restart after realizing our initial approach was flawed, but in the end, it was an incredibly rewarding experience that made programming fun for me.",
+        "longDescription": "This was my first real programming project, and it played a huge role in getting me interested in computer science. As a group, we built a turn-based Battleship game in Java, implementing a graphical interface, and game logic. The project had its challenges, including a complete restart after realizing our initial approach was flawed, but in the end, it was an incredibly rewarding experience that made programming fun for me.",
         "techStack": ["Java"],
         "images": ["/images/battleship.png"],
         "showVideoOnly": false,
@@ -279,8 +279,7 @@
           "keyFeatures": [
             "Turn-based gameplay with two-player support.",
             "Graphical interface built with Java Swing.",
-            "Randomized ship placement and hit/miss detection.",
-            "Basic game AI for a single-player mode."
+            "Randomized ship placement and hit/miss detection."
           ],
           "technologiesUsed": [
             "Java for game logic and object-oriented design.",
