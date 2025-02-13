@@ -1,5 +1,48 @@
 {
     "projects": [
+      {
+        "id": "x-ray-detection",
+        "title": "X-Ray Fracture Detection",
+        "shortDescription": "A deep learning model to classify X-ray fractures into seven types.",
+        "longDescription": "This project applies deep learning techniques to classify X-ray images into seven different types of fractures. Using ResNet50, the model was fine-tuned through multiple training stages, including augmentation, Mixup training, and learning rate optimizations. The project features a Streamlit frontend and a Flask backend for real-time predictions.",
+        "techStack": ["Python", "PyTorch", "ResNet50", "Streamlit", "Flask"],
+        "github": "https://github.com/surya142002/X-ray-Fracture-Detection",
+        "images": ["/images/x_ray_detection.png"],
+        "showVideoOnly": false,
+        "extraDescription": {
+            "problemStatement": "X-ray fracture classification is challenging due to subtle differences in fracture types. Automating this process can assist radiologists by providing preliminary assessments.",
+            "technicalChallenges": [
+                "Fine-tuning ResNet50 to generalize well across different fracture types.",
+                "Avoiding overfitting due to dataset size limitations.",
+                "Applying data augmentation strategies to improve model robustness.",
+                "Using Grad-CAM visualizations to interpret model decisions."
+            ],
+            "keyFeatures": [
+                "Classifies X-ray images into seven fracture categories.",
+                "Fine-tuned ResNet50 with data augmentation and Mixup training.",
+                "Grad-CAM visualizations to highlight model focus areas.",
+                "Interactive web app using Streamlit and Flask for real-time predictions."
+            ],
+            "technologiesUsed": [
+                "PyTorch for deep learning model training.",
+                "ResNet50 for image classification.",
+                "Flask for serving the trained model via an API.",
+                "Streamlit for an interactive frontend to upload and classify X-rays."
+            ],
+            "whatILearned": [
+                "How to fine-tune convolutional neural networks for medical imaging.",
+                "Techniques to mitigate overfitting with data augmentation and Mixup training.",
+                "How to deploy deep learning models using Flask and Streamlit.",
+                "Interpreting model decisions using Grad-CAM heatmaps."
+            ],
+            "futureImprovements": [
+                "Experiment with EfficientNet for improved medical imaging classification.",
+                "Implement Faster R-CNN or YOLO for object detection in X-rays.",
+                "Collect more labeled X-ray data to improve generalization.",
+                "Optimize model inference for real-time predictions in clinical applications."
+            ]
+        }
+    },
         {
             "id": "medicare-data",
             "title": "Medicare Data Project",
