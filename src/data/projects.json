@@ -172,39 +172,45 @@
               ]
             }
           },
-          
+
+
           {
-            "id": "pacman-ai",
-            "title": "Pac-Man AI",
+            "id": "merck-data-viz",
+            "title": "Bio-Wearables Data Visualization",
             "featured": false,
-            "shortDescription": "Implemented classical search algorithms in a Pac-Man environment.",
-            "longDescription": "As part of a structured course project, I developed AI agents for Pac-Man using classical search algorithms such as Depth-First Search (DFS), Breadth-First Search (BFS), Uniform Cost Search, and A*. This project provided hands-on experience with foundational AI concepts and their application in pathfinding and decision-making within a game environment.",
-            "techStack": ["Python"],
-            "images": ["/images/pacman.png"],
+            "shortDescription": "A simple R Shiny dashboard for visualizing Fitbit health data.",
+            "longDescription": "This was my first experience working in an Agile/Scrum environment. As part of a student team in Purdue’s Data Mine program, I worked on a data visualization project in collaboration with Merck. Our team built an interactive dashboard using R Shiny to analyze Fitbit bio-wearables data. The goal was to transform large datasets into intuitive graphs and charts to help researchers identify trends in physical activity and heart rate metrics.",
+            "techStack": ["R", "Shiny", "Plotly", "ggplot2"],
+            "images": ["/images/merck.png"],
             "showVideoOnly": false,
             "extraDescription": {
-              "problemStatement": "Navigate Pac-Man through mazes to collect all pellets efficiently while avoiding ghosts.",
+              "problemStatement": "The goal of this project was to take complex Fitbit bio-wearables data and present it in an interactive, easy-to-understand format for researchers.",
               "technicalChallenges": [
-                "Implementing various search algorithms to find optimal paths.",
-                "Balancing exploration and exploitation in pathfinding.",
-                "Understanding the trade-offs between different search strategies."
+                "Connecting and querying a remote database (MariaDB) to fetch Fitbit data.",
+                "Handling large datasets efficiently in R for real-time visualization.",
+                "Designing a clean and interactive dashboard using R Shiny."
               ],
               "keyFeatures": [
-                "Implementation of DFS, BFS, Uniform Cost Search, and A* algorithms.",
-                "Visualization of search processes within the Pac-Man game.",
-                "Comparison of algorithm performance in different maze scenarios."
+                "Interactive dashboards for Fitbit data analysis.",
+                "Visualizations of activity levels, step counts, and heart rate trends.",
+                "SQL-based data retrieval from a MariaDB database.",
+                "Filters to explore specific time periods and data points."
               ],
               "technologiesUsed": [
-                "Python for algorithm implementation.",
-                "Provided Pac-Man codebase for simulation and testing."
+                "R for data processing and visualization.",
+                "Shiny for building interactive web dashboards.",
+                "Plotly & ggplot2 for creating dynamic charts and graphs.",
+                "MariaDB for storing and querying Fitbit data."
               ],
               "whatILearned": [
-                "Practical application of classical search algorithms.",
-                "Analyzing the efficiency and effectiveness of different search strategies.",
-                "Gained foundational understanding of AI problem-solving techniques."
+                "How to work in an Agile/Scrum environment with sprints and daily standups.",
+                "Using tools like Confluence and Trello for project tracking.",
+                "Building interactive dashboards with R Shiny.",
+                "Collaborating with corporate partners in a structured project setting."
               ]
             }
           },
+          
           
           {
             "id": "my-shell",
@@ -243,44 +249,7 @@
               ]
             }
           },
-          
-          {
-            "id": "memory-allocator",
-            "title": "Memory Allocator",
-            "featured": false,
-            "shortDescription": "Implemented a custom memory allocator with dynamic allocation strategies.",
-            "longDescription": "As part of a structured course project, I implemented a custom memory allocator in C that mimics the behavior of `malloc()`, `free()`, and `realloc()`. This project provided hands-on experience with memory management, including dynamic allocation, fragmentation handling, and efficient space utilization. The implementation included various allocation strategies and ensured thread safety using mutex locks.",
-            "techStack": ["C", "C++"],
-            "images": ["/images/memory-allocator.png"],
-            "showVideoOnly": false,
-            "extraDescription": {
-              "problemStatement": "Understanding how memory allocation works at a low level is fundamental to systems programming. This project involved implementing a custom memory allocator to manage heap memory efficiently, similar to how `malloc()` works in standard C libraries.",
-              "technicalChallenges": [
-                "Implementing `malloc()`, `free()`, and `realloc()` from scratch while maintaining efficiency.",
-                "Handling fragmentation to optimize memory reuse.",
-                "Ensuring thread safety using mutexes for concurrent memory allocation.",
-                "Developing multiple allocation strategies including first fit, next fit, best fit, and worst fit."
-              ],
-              "keyFeatures": [
-                "Custom implementations of `malloc()`, `free()`, and `realloc()`.",
-                "Freelist-based memory management with coalescing to minimize fragmentation.",
-                "Implemented various allocation strategies: first fit, next fit, best fit, and worst fit.",
-                "Thread safety ensured using mutex locks."
-              ],
-              "technologiesUsed": [
-                "C for low-level memory management.",
-                "POSIX system calls (`sbrk()`, `mmap()`) for heap expansion.",
-                "Mutex locks for thread-safe allocations."
-              ],
-              "whatILearned": [
-                "How dynamic memory allocation works under the hood.",
-                "Techniques for reducing memory fragmentation using freelists and coalescing.",
-                "Implementing and comparing different allocation strategies for performance.",
-                "Ensuring thread safety in memory management using mutexes."
-              ]
-            }
-          },
-          
+
           {
             "id": "chatroom",
             "title": "Java Chatroom",
@@ -321,41 +290,76 @@
           },
           
           {
-            "id": "merck-data-viz",
-            "title": "Bio-Wearables Data Visualization",
+            "id": "memory-allocator",
+            "title": "Memory Allocator",
             "featured": false,
-            "shortDescription": "A simple R Shiny dashboard for visualizing Fitbit health data.",
-            "longDescription": "This was my first experience working in an Agile/Scrum environment. As part of a student team in Purdue’s Data Mine program, I worked on a data visualization project in collaboration with Merck. Our team built an interactive dashboard using R Shiny to analyze Fitbit bio-wearables data. The goal was to transform large datasets into intuitive graphs and charts to help researchers identify trends in physical activity and heart rate metrics.",
-            "techStack": ["R", "Shiny", "Plotly", "ggplot2"],
-            "images": ["/images/merck.png"],
+            "shortDescription": "Implemented a custom memory allocator with dynamic allocation strategies.",
+            "longDescription": "As part of a structured course project, I implemented a custom memory allocator in C that mimics the behavior of `malloc()`, `free()`, and `realloc()`. This project provided hands-on experience with memory management, including dynamic allocation, fragmentation handling, and efficient space utilization. The implementation included various allocation strategies and ensured thread safety using mutex locks.",
+            "techStack": ["C", "C++"],
+            "images": ["/images/memory-allocator.png"],
             "showVideoOnly": false,
             "extraDescription": {
-              "problemStatement": "The goal of this project was to take complex Fitbit bio-wearables data and present it in an interactive, easy-to-understand format for researchers.",
+              "problemStatement": "Understanding how memory allocation works at a low level is fundamental to systems programming. This project involved implementing a custom memory allocator to manage heap memory efficiently, similar to how `malloc()` works in standard C libraries.",
               "technicalChallenges": [
-                "Connecting and querying a remote database (MariaDB) to fetch Fitbit data.",
-                "Handling large datasets efficiently in R for real-time visualization.",
-                "Designing a clean and interactive dashboard using R Shiny."
+                "Implementing `malloc()`, `free()`, and `realloc()` from scratch while maintaining efficiency.",
+                "Handling fragmentation to optimize memory reuse.",
+                "Ensuring thread safety using mutexes for concurrent memory allocation.",
+                "Developing multiple allocation strategies including first fit, next fit, best fit, and worst fit."
               ],
               "keyFeatures": [
-                "Interactive dashboards for Fitbit data analysis.",
-                "Visualizations of activity levels, step counts, and heart rate trends.",
-                "SQL-based data retrieval from a MariaDB database.",
-                "Filters to explore specific time periods and data points."
+                "Custom implementations of `malloc()`, `free()`, and `realloc()`.",
+                "Freelist-based memory management with coalescing to minimize fragmentation.",
+                "Implemented various allocation strategies: first fit, next fit, best fit, and worst fit.",
+                "Thread safety ensured using mutex locks."
               ],
               "technologiesUsed": [
-                "R for data processing and visualization.",
-                "Shiny for building interactive web dashboards.",
-                "Plotly & ggplot2 for creating dynamic charts and graphs.",
-                "MariaDB for storing and querying Fitbit data."
+                "C for low-level memory management.",
+                "POSIX system calls (`sbrk()`, `mmap()`) for heap expansion.",
+                "Mutex locks for thread-safe allocations."
               ],
               "whatILearned": [
-                "How to work in an Agile/Scrum environment with sprints and daily standups.",
-                "Using tools like Confluence and Trello for project tracking.",
-                "Building interactive dashboards with R Shiny.",
-                "Collaborating with corporate partners in a structured project setting."
+                "How dynamic memory allocation works under the hood.",
+                "Techniques for reducing memory fragmentation using freelists and coalescing.",
+                "Implementing and comparing different allocation strategies for performance.",
+                "Ensuring thread safety in memory management using mutexes."
               ]
             }
           },
+
+
+          {
+            "id": "pacman-ai",
+            "title": "Pac-Man AI",
+            "featured": false,
+            "shortDescription": "Implemented classical search algorithms in a Pac-Man environment.",
+            "longDescription": "As part of a structured course project, I developed AI agents for Pac-Man using classical search algorithms such as Depth-First Search (DFS), Breadth-First Search (BFS), Uniform Cost Search, and A*. This project provided hands-on experience with foundational AI concepts and their application in pathfinding and decision-making within a game environment.",
+            "techStack": ["Python"],
+            "images": ["/images/pacman.png"],
+            "showVideoOnly": false,
+            "extraDescription": {
+              "problemStatement": "Navigate Pac-Man through mazes to collect all pellets efficiently while avoiding ghosts.",
+              "technicalChallenges": [
+                "Implementing various search algorithms to find optimal paths.",
+                "Balancing exploration and exploitation in pathfinding.",
+                "Understanding the trade-offs between different search strategies."
+              ],
+              "keyFeatures": [
+                "Implementation of DFS, BFS, Uniform Cost Search, and A* algorithms.",
+                "Visualization of search processes within the Pac-Man game.",
+                "Comparison of algorithm performance in different maze scenarios."
+              ],
+              "technologiesUsed": [
+                "Python for algorithm implementation.",
+                "Provided Pac-Man codebase for simulation and testing."
+              ],
+              "whatILearned": [
+                "Practical application of classical search algorithms.",
+                "Analyzing the efficiency and effectiveness of different search strategies.",
+                "Gained foundational understanding of AI problem-solving techniques."
+              ]
+            }
+          },
+          
           
       {
         "id": "battleship",
