@@ -22,46 +22,46 @@ const About = () => {
       {/* Introduction */}
       <p className="mt-2 text-lg text-center">
         Hi! I'm Surya, a Computer Science graduate from Purdue University (Class of 2024), specializing in 
-        artificial intelligence, machine learning, and software development. I have a strong interest in **AI-driven 
-        healthcare solutions**, using machine learning to tackle real-world challenges in **medical diagnostics and billing automation**.
+        artificial intelligence, machine learning, and software development. I have a strong interest in AI-driven 
+        healthcare solutions, using machine learning to tackle real-world challenges in medical diagnostics and billing automation.
       </p>
 
       {/* Project Highlights */}
       <p className="mt-6 text-lg text-center">Some of the projects I’ve worked on include:</p>
       <ul className="list-disc list-inside text-lg text-left mt-4">
         <li>
-          <strong>X-Ray Fracture Detection</strong> – A deep learning model trained on medical imaging data to classify X-ray 
-          fractures into seven types. Used **ResNet50, PyTorch, and Grad-CAM visualizations** for explainability.
+          X-Ray Fracture Detection – A deep learning model trained on medical imaging data to classify X-ray 
+          fractures into seven types. Used ResNet50, PyTorch, and Grad-CAM visualizations for explainability.
         </li>
         <li>
-          <strong>Medical Billing AI Project</strong> – Built an AI-powered anomaly detection system to analyze **Medicare billing 
-          claims** for fraud patterns, using **XGBoost, Scikit-Learn, and NLP-based analysis**.
+          Medical Billing AI Project – Built an AI-powered anomaly detection system to analyze Medicare billing 
+          claims for fraud patterns, using XGBoost, Scikit-Learn, and NLP-based analysis.
         </li>
         <li>
-          <strong>AI Snitch Machine</strong> – A computer vision project using YOLOv8 and Roboflow to detect similarities 
+          AI Snitch Machine – A computer vision project using YOLOv8 and Roboflow to detect similarities 
           in student submissions. I focused on data preprocessing and model training.
         </li>
         <li>
-          <strong>Medicare Data Platform</strong> – A full-stack web application built with **React, Node.js, and PostgreSQL**, 
+          Medicare Data Platform – A full-stack web application built with React, Node.js, and PostgreSQL, 
           allowing users to search ICD-10 and HCPCS medical codes.
         </li>
         <li>
-          <strong>Systems Programming</strong> – Developed a Unix-like **shell and custom memory allocator** in C and C++, 
+          Systems Programming – Developed a Unix-like shell and a custom memory allocator in C and C++, 
           working with process management, system calls, and dynamic memory allocation.
         </li>
         <li>
-          <strong>Bio-Wearables Data Visualization</strong> – Worked with **The Data Mine at Purdue and Merck** corporate partners 
-          to develop an **R Shiny dashboard** for analyzing **Fitbit health data**.
+          Bio-Wearables Data Visualization – Worked with The Data Mine at Purdue and Merck corporate partners 
+          to develop an R Shiny dashboard for analyzing Fitbit health data.
         </li>
         <li>
-          <strong>Pac-Man AI</strong> – Implemented BFS, DFS, A*, and reinforcement learning to navigate Pac-Man through mazes.
+          Pac-Man AI – Implemented BFS, DFS, A*, and reinforcement learning to navigate Pac-Man through mazes.
         </li>
       </ul>
 
       {/* Work Experience & Agile Exposure */}
       <p className="mt-6 text-lg text-center">
-        My experience at The Data Mine at Purdue gave me insight into working in **Agile/Scrum** environments. 
-        I collaborated with a team using **Trello and Confluence**, attending regular Scrum meetings, setting 
+        My experience at The Data Mine at Purdue gave me insight into working in Agile/Scrum environments. 
+        I collaborated with a team using Trello and Confluence, attending regular Scrum meetings, setting 
         development goals, and working with corporate mentors to refine our project.
       </p>
 
@@ -72,14 +72,14 @@ const About = () => {
           <li>Programming Languages: Python, Java, C, C++, TypeScript, JavaScript, R, HTML/CSS</li>
           <li>Frameworks & Libraries: React, Node.js, Express, Tailwind CSS, R Shiny</li>
           <li>AI/ML Tools: TensorFlow, PyTorch, Scikit-learn, YOLOv8, XGBoost, NLP Techniques</li>
-          <li>Databases: PostgreSQL, MongoDB</li>
+          <li>Databases: PostgreSQL, SQLite</li>
           <li>Other Tools: Git, Agile/Scrum, Trello, Confluence</li>
         </ul>
       </div>
 
       {/* Closing Statement */}
       <p className="mt-6 text-lg text-center">
-        I'm always excited to learn and build innovative projects, especially at the intersection of **AI and healthcare**. 
+        I'm always excited to learn and build innovative projects, especially at the intersection of AI and healthcare. 
         Feel free to explore my work and connect with me!
       </p>
     </motion.div>
