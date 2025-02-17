@@ -1,6 +1,50 @@
 {
     "projects": [
       {
+        "id": "medicare-fraud-ai",
+        "title": "Medicare Fraud Detection AI",
+        "shortDescription": "An AI-powered fraud detection model trained on Medicare billing data.",
+        "longDescription": "This project utilizes machine learning to detect fraudulent Medicare claims based on billing patterns. By analyzing HCPCS codes, service modifiers, allowed charges, and payment amounts, the model identifies potentially fraudulent activity. The system is trained on real CMS data with additional synthetic fraud cases to enhance detection accuracy.",
+        "techStack": ["Python", "XGBoost", "pandas", "NumPy", "Scikit-Learn"],
+        "images": ["/images/billing_project.png"],
+        "github": "",  
+        "showVideoOnly": false,
+        "extraDescription": {
+            "problemStatement": "Medicare fraud costs billions of dollars annually. Traditional fraud detection is slow and manual, making it difficult to prevent fraudulent billing at scale. This project leverages AI to automate fraud detection and flag suspicious claims.",
+            "technicalChallenges": [
+                "Generating high-quality synthetic fraud data that accurately represents real-world fraud cases.",
+                "Balancing fraud detection performance (high recall vs. minimizing false positives).",
+                "Ensuring the model generalizes well beyond training data and does not overfit to specific patterns."
+            ],
+            "keyFeatures": [
+                "Identifies fraudulent Medicare claims using machine learning.",
+                "Trained on a combination of real CMS data and synthetic fraud cases.",
+                "Feature importance analysis highlights key fraud indicators.",
+                "Cross-validation ensures stable and robust fraud detection performance."
+            ],
+            "technologiesUsed": [
+                "XGBoost for fraud classification.",
+                "pandas and NumPy for data preprocessing.",
+                "Scikit-Learn for model evaluation and feature engineering.",
+                "Matplotlib for fraud detection visualizations."
+            ],
+            "whatILearned": [
+                "How to generate synthetic fraud cases to improve anomaly detection models.",
+                "The role of feature importance in model explainability for fraud detection.",
+                "Optimizing ML models to handle imbalanced datasets (scale_pos_weight tuning).",
+                "Validating model performance using cross-validation and feature analysis."
+            ],
+            "futureImprovements": [
+                "Incorporating provider-level fraud analysis (detecting suspicious billing behaviors over time).",
+                "Expanding fraud detection to include NLP-based analysis of claim descriptions.",
+                "Deploying a web-based interface for real-time fraud detection.",
+                "Enhancing synthetic data generation to better replicate real fraud patterns."
+            ]
+        }
+    },
+
+
+      {
         "id": "x-ray-detection",
         "title": "X-Ray Fracture Detection",
         "shortDescription": "A deep learning model to classify X-ray fractures into seven types.",
