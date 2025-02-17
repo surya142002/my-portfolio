@@ -18,9 +18,34 @@ const Projects = () => {
         {projects.map((project) => (
           <Link to={`/projects/${project.id}`} key={project.id}>
             <motion.div
-              className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className={`relative bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow`}
               whileHover={{ scale: 1.05 }}
+              animate={project.featured ? { boxShadow: "0px 0px 20px rgba(255, 165, 0, 0.6)" } : {}}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
             >
+              {/* Fire Glow Effect (Subtle Pulse) */}
+              {project.featured && (
+                <motion.div
+                  className="absolute inset-0 rounded-lg"
+                  initial={{ opacity: 0.6, scale: 1 }}
+                  animate={{ opacity: [0.6, 0.9, 0.6], scale: [1, 1.05, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ boxShadow: "0px 0px 15px rgba(255, 69, 0, 0.5)" }}
+                />
+              )}
+
+              {/* Featured Badge */}
+              {project.featured && (
+                <motion.span
+                  className="absolute top-2 left-2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full"
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  🔥 Featured
+                </motion.span>
+              )}
+
               {/* Project Image (Only if Available) */}
               {project.images && project.images.length > 0 && (
                 <img 

@@ -2,6 +2,7 @@
     "projects": [
       {
         "id": "medicare-fraud-ai",
+        "featured": true,
         "title": "Medicare Fraud Detection AI",
         "shortDescription": "An AI-powered fraud detection model trained on Medicare billing data.",
         "longDescription": "This project utilizes machine learning to detect fraudulent Medicare claims based on billing patterns. By analyzing HCPCS codes, service modifiers, allowed charges, and payment amounts, the model identifies potentially fraudulent activity. The system is trained on real CMS data with additional synthetic fraud cases to enhance detection accuracy.",
@@ -47,6 +48,7 @@
       {
         "id": "x-ray-detection",
         "title": "X-Ray Fracture Detection",
+        "featured": true,
         "shortDescription": "A deep learning model to classify X-ray fractures into seven types.",
         "longDescription": "This project applies deep learning techniques to classify X-ray images into seven different types of fractures. Using ResNet50, the model was fine-tuned through multiple training stages, including augmentation, Mixup training, and learning rate optimizations. The project features a Streamlit frontend and a Flask backend for real-time predictions.",
         "techStack": ["Python", "PyTorch", "ResNet50", "Streamlit", "Flask"],
@@ -90,6 +92,7 @@
         {
             "id": "medicare-data",
             "title": "Medicare Data Project",
+            "featured": true,
             "shortDescription": "A full-stack app for exploring Medicare datasets.",
             "longDescription": "The Medicare Data Project is a web platform designed to allow users to search and explore Medicare datasets efficiently. It currently supports dataset uploads for ICD-10 and HCPCS codes and enables basic keyword-based searching. The goal is to make Medicare data more accessible to researchers and healthcare professionals.",
             "techStack": ["React", "Node.js", "PostgreSQL"],
@@ -134,6 +137,7 @@
           {
             "id": "object-detection",
             "title": "AI Snitch Machine",
+            "featured": false,
             "shortDescription": "Using YOLOv8 and Roboflow to detect similarities in student submissions.",
             "longDescription": "The AI Snitch Machine is a machine learning-powered tool designed to analyze and cluster student ERD (Entity Relationship Diagram) submissions. It uses YOLOv8 for object detection and Roboflow for dataset preprocessing to identify patterns and similarities in diagrams, helping automate grading and plagiarism detection. The project involved developing object detection, OCR text extraction, and clustering techniques to compare diagrams.",
             "techStack": ["Python", "YOLOv8", "Roboflow", "EasyOCR"],
@@ -172,6 +176,7 @@
           {
             "id": "pacman-ai",
             "title": "Pac-Man AI",
+            "featured": false,
             "shortDescription": "Implemented classical search algorithms in a Pac-Man environment.",
             "longDescription": "As part of a structured course project, I developed AI agents for Pac-Man using classical search algorithms such as Depth-First Search (DFS), Breadth-First Search (BFS), Uniform Cost Search, and A*. This project provided hands-on experience with foundational AI concepts and their application in pathfinding and decision-making within a game environment.",
             "techStack": ["Python"],
@@ -204,6 +209,7 @@
           {
             "id": "my-shell",
             "title": "My Shell",
+            "featured": false,
             "shortDescription": "Implemented a Unix-like shell with process handling, redirection, and piping.",
             "longDescription": "As part of a structured course project, I implemented key features of a Unix-like shell in C and C++. This involved command parsing, executing processes, managing input/output redirection, and handling background processes. The project provided hands-on experience with system calls, process management, and inter-process communication.",
             "techStack": ["C", "C++"],
@@ -241,6 +247,7 @@
           {
             "id": "memory-allocator",
             "title": "Memory Allocator",
+            "featured": false,
             "shortDescription": "Implemented a custom memory allocator with dynamic allocation strategies.",
             "longDescription": "As part of a structured course project, I implemented a custom memory allocator in C that mimics the behavior of `malloc()`, `free()`, and `realloc()`. This project provided hands-on experience with memory management, including dynamic allocation, fragmentation handling, and efficient space utilization. The implementation included various allocation strategies and ensured thread safety using mutex locks.",
             "techStack": ["C", "C++"],
@@ -277,6 +284,7 @@
           {
             "id": "chatroom",
             "title": "Java Chatroom",
+            "featured": false,
             "shortDescription": "A multi-user chat application built in Java with networking and GUI.",
             "longDescription": "For my Object-Oriented Programming final project, my team and I developed a real-time chatroom application in Java. This project was my first experience working in a group, using Git for version control, and implementing a structured software project from start to finish. The chatroom supports multiple users, message broadcasting, account management, and moderation tools, all built with Java's Swing for the GUI and Java Sockets for networking.",
             "techStack": ["Java", "Swing", "Sockets", "JUnit"],
@@ -315,6 +323,7 @@
           {
             "id": "merck-data-viz",
             "title": "Bio-Wearables Data Visualization",
+            "featured": false,
             "shortDescription": "A simple R Shiny dashboard for visualizing Fitbit health data.",
             "longDescription": "This was my first experience working in an Agile/Scrum environment. As part of a student team in Purdue’s Data Mine program, I worked on a data visualization project in collaboration with Merck. Our team built an interactive dashboard using R Shiny to analyze Fitbit bio-wearables data. The goal was to transform large datasets into intuitive graphs and charts to help researchers identify trends in physical activity and heart rate metrics.",
             "techStack": ["R", "Shiny", "Plotly", "ggplot2"],
@@ -351,6 +360,7 @@
       {
         "id": "battleship",
         "title": "Battleship Game",
+        "featured": false,
         "shortDescription": "A Java-based Battleship game that sparked my interest in computer science.",
         "longDescription": "This was my first real programming project, and it played a huge role in getting me interested in computer science. As a group, we built a turn-based Battleship game in Java, implementing a graphical interface, and game logic. The project had its challenges, including a complete restart after realizing our initial approach was flawed, but in the end, it was an incredibly rewarding experience that made programming fun for me.",
         "techStack": ["Java"],
