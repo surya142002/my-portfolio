@@ -47,7 +47,7 @@
 
       {
         "id": "x-ray-detection",
-        "title": "X-Ray Fracture Detection",
+        "title": "X-Ray Fracture Classification",
         "featured": true,
         "shortDescription": "A deep learning model to classify X-ray fractures into seven types.",
         "longDescription": "This project applies deep learning techniques to classify X-ray images into seven different types of fractures. Using ResNet50, the model was fine-tuned through multiple training stages, including augmentation, Mixup training, and learning rate optimizations. The project features a Streamlit frontend and a Flask backend for real-time predictions.",
