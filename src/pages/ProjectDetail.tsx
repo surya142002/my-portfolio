@@ -13,8 +13,9 @@ const ProjectDetail = () => {
     return <p className="text-center text-xl">Project not found!</p>;
   }
 
-  const nextProject = projects[(projectIndex + 1) % projects.length];
-  const prevProject = projects[(projectIndex - 1 + projects.length) % projects.length];
+  // Determine next and previous projects with linear navigation
+  const nextProject = projectIndex < projects.length - 1 ? projects[projectIndex + 1] : null;
+  const prevProject = projectIndex > 0 ? projects[projectIndex - 1] : null;
 
   return (
     <motion.div
@@ -68,7 +69,7 @@ const ProjectDetail = () => {
         </div>
       )}
 
-      {/* Extra Description Section (Only Render Sections That Exist) */}
+      {/* Extra Description Section */}
       {project.extraDescription && (
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-4 text-center">Project Walkthrough</h2>
@@ -139,12 +140,19 @@ const ProjectDetail = () => {
 
       {/* Navigation Arrows */}
       <div className="flex justify-between items-center mt-8">
-        <Link to={`/projects/${prevProject.id}`} className="flex items-center text-blue-500 hover:underline">
-          <ArrowLeft className="mr-2" /> {prevProject.title}
-        </Link>
-        <Link to={`/projects/${nextProject.id}`} className="flex items-center text-blue-500 hover:underline">
-          {nextProject.title} <ArrowRight className="ml-2" />
-        </Link>
+        {/* Left Arrow for Previous Project */}
+        {prevProject ? (
+          <Link to={`/projects/${prevProject.id}`} className="flex items-center text-blue-500 hover:underline">
+            <ArrowLeft className="mr-2" /> {prevProject.title}
+          </Link>
+        ) : <div />}
+
+        {/* Right Arrow for Next Project */}
+        {nextProject ? (
+          <Link to={`/projects/${nextProject.id}`} className="flex items-center text-blue-500 hover:underline">
+            {nextProject.title} <ArrowRight className="ml-2" />
+          </Link>
+        ) : <div />}
       </div>
     </motion.div>
   );
