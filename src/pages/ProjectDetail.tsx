@@ -5,7 +5,7 @@ import projectsData from '../data/projects.json';
 
 const ProjectDetail = () => {
   const { projectId } = useParams<{ projectId: string }>();
-  const projects = projectsData.projects;
+  const projects = projectsData.projects.filter((project) => project.include === true);
   const projectIndex = projects.findIndex(p => p.id === projectId);
   const project = projects[projectIndex];
 
@@ -53,20 +53,6 @@ const ProjectDetail = () => {
             ))}
           </div>
         )
-      )}
-
-      {/* GitHub Link (Only If Available) */}
-      {project.github && (
-        <div className="text-center mt-6">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition inline-block"
-          >
-            View on GitHub
-          </a>
-        </div>
       )}
 
       {/* Extra Description Section */}

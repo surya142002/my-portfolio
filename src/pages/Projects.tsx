@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 
 const Projects = () => {
-  const projects = projectsData.projects;
+  const projects = projectsData.projects.filter((project) => project.include === true);
 
   return (
     <motion.div

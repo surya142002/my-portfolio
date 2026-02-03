@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -20,18 +20,6 @@ const Contact = () => {
           <Mail size={24} />
           <a href="mailto:surya142002@gmail.com" className="text-lg sm:text-xl hover:text-blue-500 transition-colors">
             surya142002@gmail.com
-          </a>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Github size={24} />
-          <a href="https://github.com/surya142002" target="_blank" rel="noopener noreferrer" className="text-lg sm:text-xl hover:text-blue-500 transition-colors">
-            GitHub
-          </a>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Linkedin size={24} />
-          <a href="https://www.linkedin.com/in/surya-suresh-506627219" target="_blank" rel="noopener noreferrer" className="text-lg sm:text-xl hover:text-blue-500 transition-colors">
-            LinkedIn
           </a>
         </div>
       </div>

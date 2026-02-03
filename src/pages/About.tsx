@@ -10,77 +10,79 @@ const About = () => {
       transition={{ duration: 0.5 }}
     >
       {/* Profile Picture */}
-      <img 
-        src="/me.jpg" 
-        alt="Surya Suresh" 
+      <img
+        src="/me.jpg"
+        alt="Surya Suresh"
         className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-gray-300 dark:border-gray-600"
       />
 
       {/* Heading */}
       <h1 className="text-4xl font-bold mb-6 text-center">About Me</h1>
 
-      {/* Introduction */}
-      <p className="mt-2 text-lg text-center">
-        Hi! I'm Surya, a Computer Science graduate from Purdue University (Class of 2024), specializing in 
-        artificial intelligence, machine learning, and software development. I have a strong interest in AI-driven 
-        healthcare solutions, using machine learning to tackle real-world challenges in medical diagnostics and billing automation.
-      </p>
-
-      {/* Project Highlights */}
-      <p className="mt-6 text-lg text-center">Some of the projects I’ve worked on include:</p>
-      <ul className="list-disc list-inside text-lg text-left mt-4">
+      {/* Introduction (resume-aligned) */}
+      <p className="mt-2 text-lg text-center max-w-3xl">
+        Hi, I’m Surya, I am a Computer Science graduate from Purdue University (Dec 2024).
+        I’m interested in healthcare technology and enjoy building backend systems that work with structured data in a reliable way.
+      </p> <br />
+      
+      {/* Project Highlights (include=true only, and ordered per request) */}
+      <h2 className="text-2xl font-semibold mb-2 text-center">Projects I’ve worked on:</h2>
+      <ul className="list-disc list-inside text-lg text-left mt-4 max-w-3xl space-y-3">
         <li>
-          X-Ray Fracture Detection – A deep learning model trained on medical imaging data to classify X-ray 
-          fractures into seven types. Used ResNet50, PyTorch, and Grad-CAM visualizations for explainability.
+          <span className="font-semibold">Medicare Data Project</span> — Built a full-stack platform to ingest, normalize,
+          and search Medicare code datasets (ICD-10-CM, HCPCS) with paginated lookup, secure auth, and PostgreSQL-backed storage.
         </li>
         <li>
-          Medical Billing AI Project – Built an AI-powered anomaly detection system to analyze Medicare billing 
-          claims for fraud patterns, using XGBoost, Scikit-Learn, and NLP-based analysis.
+          <span className="font-semibold">HL7 v2 → FHIR Interoperability Pipeline</span> — Built a local ingestion pipeline that
+          validates ADT^A01 and ORU^R01 HL7 messages and persists FHIR R4 Patient/Encounter/Observation resources to a Dockerized HAPI FHIR server
+          using atomic transaction bundles.
         </li>
         <li>
-          AI Snitch Machine – A computer vision project using YOLOv8 and Roboflow to detect similarities 
-          in student submissions. I focused on data preprocessing and model training.
+          <span className="font-semibold">Bio-Wearables Data Visualization (Merck / Purdue Data Mine)</span> — Built an interactive R Shiny dashboard
+          to visualize Fitbit bio-wearables data, including database querying and filterable charts for trend exploration.
         </li>
         <li>
-          Medicare Data Platform – A full-stack web application built with React, Node.js, and PostgreSQL, 
-          allowing users to search ICD-10 and HCPCS medical codes.
+          <span className="font-semibold">AI Snitch Machine</span> — Used computer vision tooling to detect similarities in student ERD submissions,
+          focusing on preprocessing and model training.
         </li>
         <li>
-          Systems Programming – Developed a Unix-like shell and a custom memory allocator in C and C++, 
-          working with process management, system calls, and dynamic memory allocation.
+          <span className="font-semibold">My Shell</span> — Implemented a Unix-like shell with process handling, redirection, and piping in C/C++.
         </li>
         <li>
-          Bio-Wearables Data Visualization – Worked with The Data Mine at Purdue and Merck corporate partners 
-          to develop an R Shiny dashboard for analyzing Fitbit health data.
+          <span className="font-semibold">Java Chatroom</span> — Built a multi-user chat application in Java with sockets and a Swing UI, including basic testing.
         </li>
         <li>
-          Pac-Man AI – Implemented BFS, DFS, A*, and reinforcement learning to navigate Pac-Man through mazes.
+          <span className="font-semibold">Memory Allocator</span> — Implemented a custom memory allocator in C with allocation strategies and fragmentation handling.
+        </li>
+        <li>
+          <span className="font-semibold">Pac-Man AI</span> — Implemented classical search algorithms (DFS, BFS, UCS, A*) in a Pac-Man environment.
+        </li>
+        <li>
+          <span className="font-semibold">Battleship Game</span> — Built a Java Battleship game with a GUI and core gameplay logic.
         </li>
       </ul>
 
-      {/* Work Experience & Agile Exposure */}
-      <p className="mt-6 text-lg text-center">
-        My experience at The Data Mine at Purdue gave me insight into working in Agile/Scrum environments. 
-        I collaborated with a team using Trello and Confluence, attending regular Scrum meetings, setting 
-        development goals, and working with corporate mentors to refine our project.
+      {/* Agile Exposure (tightened, less fluffy) */}
+      <p className="mt-6 text-lg text-center max-w-3xl">
+        Through Purdue’s Data Mine program, I worked in an Agile/Scrum-style team environment with regular check-ins,
+        task tracking, and feedback from corporate partners.
       </p>
 
-      {/* Skills Section */}
+      {/* Skills Section (resume-aligned, cleaned up) */}
       <div className="mt-6 w-full max-w-3xl">
         <h2 className="text-2xl font-semibold mb-2 text-center">Skills & Technologies</h2>
-        <ul className="list-disc list-inside text-lg">
-          <li>Programming Languages: Python, Java, C, C++, TypeScript, JavaScript, R, HTML/CSS</li>
-          <li>Frameworks & Libraries: React, Node.js, Express, Tailwind CSS, R Shiny</li>
-          <li>AI/ML Tools: TensorFlow, PyTorch, Scikit-learn, YOLOv8, XGBoost, NLP Techniques</li>
-          <li>Databases: PostgreSQL, SQLite</li>
-          <li>Other Tools: Git, Agile/Scrum, Trello, Confluence</li>
+        <ul className="list-disc list-inside text-lg space-y-1">
+          <li><span className="font-semibold">Languages:</span> Python, JavaScript, TypeScript, SQL</li>
+          <li><span className="font-semibold">Web & Backend:</span> React, Node.js, Express, REST APIs, JWT Authentication</li>
+          <li><span className="font-semibold">Databases:</span> PostgreSQL</li>
+          <li><span className="font-semibold">Tools:</span> Git, Linux/CLI, Docker, Agile/Scrum</li>
         </ul>
       </div>
 
-      {/* Closing Statement */}
-      <p className="mt-6 text-lg text-center">
-        I'm always excited to learn and build innovative projects, especially at the intersection of AI and healthcare. 
-        Feel free to explore my work and connect with me!
+      {/* Closing Statement (credible, not hypey) */}
+      <p className="mt-6 text-lg text-center max-w-3xl">
+        I am looking for an entry-level technical role in healthcare tech where I can contribute to data platforms,
+        interoperability workflows, and backend systems.
       </p>
     </motion.div>
   );

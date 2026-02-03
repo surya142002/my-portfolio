@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 
 const Home = () => {
-  const featuredProjects = projectsData.projects.filter(project => project.featured);
+  const featuredProjects = projectsData.projects.filter(
+    (project) => project.include === true && project.featured
+  );
 
   return (
     <motion.div
@@ -19,7 +20,7 @@ const Home = () => {
         Hi, I'm Surya Suresh
       </h1>
       <p className="text-lg sm:text-xl md:text-2xl mb-6">
-        AI & ML Enthusiast | Aspiring Software Developer | Problem Solver
+        Entry-level developer interested in healthcare data and clinical systems
       </p>
 
       {/* Call-to-Action Buttons */}
@@ -76,25 +77,6 @@ const Home = () => {
         </div>
       )}
 
-      {/* Social Media Links */}
-      <div className="flex space-x-4 mt-10">
-        <a 
-          href="https://github.com/surya142002" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
-        >
-          <Github size={32} />
-        </a>
-        <a 
-          href="https://www.linkedin.com/in/surya-suresh-506627219" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
-        >
-          <Linkedin size={32} />
-        </a>
-      </div>
     </motion.div>
   );
 };
