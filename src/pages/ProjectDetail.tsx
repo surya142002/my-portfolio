@@ -34,9 +34,15 @@ const ProjectDetail = () => {
       {/* Conditionally Show Video OR Images */}
       {project.showVideoOnly && project.video ? (
         <div className="w-full flex justify-center">
-          <video controls className="w-full md:w-3/4 lg:w-2/3 h-auto rounded-lg">
-            <source src={project.video} type="video/mp4" />
-            <source src={project.video} type="video/quicktime" />
+          <video
+            key={project.video}
+            controls
+            className="w-full md:w-3/4 lg:w-2/3 h-auto rounded-lg"
+          >
+            <source
+              src={project.video}
+              type={project.video.endsWith('.mov') ? 'video/quicktime' : 'video/mp4'}
+            />
             Your browser does not support the video tag.
           </video>
         </div>
