@@ -15,10 +15,11 @@
           "HAPI FHIR",
           "PostgreSQL"
         ],
+        "video": "/videos/hl7-fhir.mov",
         "images": [
           "/images/hl7toFHIR.png"
         ],
-        "showVideoOnly": false,
+        "showVideoOnly": true,
         "extraDescription": {
           "problemStatement": "Many healthcare systems still exchange clinical data using HL7 v2 messages, while modern APIs are FHIR-based. This project bridges that gap by converting HL7 v2 ADT/ORU messages into FHIR R4 resources and persisting them in a local FHIR server using production-style transaction patterns.",
           "technicalChallenges": [
